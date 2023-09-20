@@ -1,7 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  /* background-image: linear-gradient(#903AFF,#D434FE); */
+  background-color: #150E28;
+  font-family: 'ClashDisplay';
+}
+
+.mobile-menu {
+  /* background-color: #fff; */
+  position: absolute;
+  width: 90%;
+}
+
+.register-btn {
+  background-image: linear-gradient(#903AFF,#D434FE,#FF26B9,#FE34B9);
 }
 
