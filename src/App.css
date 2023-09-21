@@ -14,3 +14,10 @@ body {
   background-image: linear-gradient(#903AFF,#D434FE,#FF26B9,#FE34B9);
 }
 
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
