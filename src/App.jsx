@@ -6,7 +6,6 @@ import { Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
