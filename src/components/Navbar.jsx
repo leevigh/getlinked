@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className=''>
-        <nav className='border-b-[0.1px] border-b-white lg:max-w-[1500px] mx-auto flex justify-between items-center lg:items-center p-8'>
+        <nav className='border-b-[0.1px] border-opacity-20 border-b-white lg:max-w-[1500px] mx-auto flex justify-between items-center lg:items-center pb-8 pt-10 px-8'>
 
             <div className='text-[18px] lg:text-[36px] font-bold'>
                 <Link to={'/'}>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <div 
                     className="
                             bg-[#150E28] lg:hidden py-6 
-                            mobile-menu right-0 top-0 w-full px-[32px]">
+                            mobile-menu right-0 top-0 w-full h-screen px-[32px] z-10">
 
                     <div className='flex justify-end py-[1rem]'>
                         <div onClick={handleMenu}>
