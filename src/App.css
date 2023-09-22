@@ -1,7 +1,7 @@
 body {
   /* background-image: linear-gradient(#903AFF,#D434FE); */
-  background-color: #150E28;
-  font-family: 'ClashDisplay';
+  background-color: #150e28;
+  font-family: "ClashDisplay";
 }
 
 .mobile-menu {
@@ -11,7 +11,7 @@ body {
 }
 
 .register-btn {
-  background-image: linear-gradient(#903AFF,#D434FE,#FF26B9,#FE34B9);
+  background-image: linear-gradient(#903aff, #d434fe, #ff26b9, #fe34b9);
 }
 
 #root {
@@ -21,3 +21,30 @@ body {
   text-align: center; */
 }
 
+.timeline-dot {
+  background-image: linear-gradient(#903aff, #d434fe);
+}
+
+.timeline-dot::after {
+  content: "";
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 137px;
+  width: 4px;
+  background-color: #d434fe;
+}
+
+@media(max-width: 800px) {
+  .timeline-dot::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 77px;
+    width: 4px;
+    background-color: #d434fe;
+  }
+}

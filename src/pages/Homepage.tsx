@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/sections/Hero'
 import { Rules } from '../Components/Sections/Rules'
 import BigIdea from '../components/sections/BigIdea'
+import TimelineSection from '../components/sections/TimelineSection'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
         <Hero />
         <BigIdea />
         <Rules />
+        <TimelineSection />
     </>
   )
 }
