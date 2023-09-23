@@ -3,7 +3,7 @@ import partner from '../../assets/partner.png'
 
 const Partners = () => {
   return (
-    <div className='bg-custom-bg-color p-[4rem] border border-purple-400 border-l-0 border-r-0 border-t-0  border-b-1'>
+    <div className='bg-custom-bg-color p-[4rem] pb-[6rem] border border-purple-400 border-l-0 border-r-0 border-t-0  border-b-1'>
 
         <div className='text-center text-white mb-[32px]'>
             <p className='text-[20px] font-extrabold font-ClashDisplay'><span>Partners and Sponsor</span></p>
