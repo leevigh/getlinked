@@ -46,8 +46,30 @@ const Register = () => {
         e.preventDefault()
 
         // const response
+        try {
+            setLoading(true)
+            const response = await api.get('/hackathon/registration')
+
+            if(response?.status === 200) {
+                setLoading(false)
+
+                setData({
+                    "email":"",
+                    "phone_number":"",
+                    "team_name": "",
+                    "group_size": 0,
+                    "project_topic":"",
+                    "category": 0,
+                    "privacy_poclicy_accepted": false
+                })
+
+                setShowModal(true)
+            }
+        } catch (error) {
+            setLoading(false)
+            alert("There was an error")
+        }
         
-        console.log("data", data)
     }
 
     const checkPrivacy = () => {

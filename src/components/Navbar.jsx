@@ -28,10 +28,10 @@ const Navbar = () => {
 
             <div className='hidden lg:flex lg:items-center'>
                 <div className='flex text-white font-normal'>
-                    <Link to='/'><div className='pr-14'>Timeline</div></Link>
-                    <Link to='/'><div className='pr-14'>Overview</div></Link>
-                    <Link to='/'><div className='pr-14'>FAQs</div></Link>
-                    <Link to='/'><div className='pr-14'>Contact</div></Link>
+                    <Link to='#timeline'><div className='pr-14'>Timeline</div></Link>
+                    <Link to='#overview'><div className='pr-14'>Overview</div></Link>
+                    <Link to='#faqs'><div className='pr-14'>FAQs</div></Link>
+                    <Link to='/contact-us'><div className='pr-14'>Contact</div></Link>
                 </div>
 
                 <Link to={'/register'}>
@@ -58,10 +58,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     <ul className="text-white">
-                        <Link to=""><li className='py-[1rem]'>Timeline</li></Link>
-                        <Link to=""><li className='py-[1rem]'>Overview</li></Link>
-                        <Link to=""><li className='py-[1rem]'>FAQs</li></Link>
-                        <Link to=""><li className='py-[1rem]'>Contact</li></Link>
+                        <Link to="#timeline"><li className='py-[1rem]'>Timeline</li></Link>
+                        <Link to="#overview"><li className='py-[1rem]'>Overview</li></Link>
+                        <Link to="#faqs"><li className='py-[1rem]'>FAQs</li></Link>
+                        <Link to="/contact-us"><li className='py-[1rem]'>Contact</li></Link>
 
                         <Link to={'/register'}>
                         <div className='py-[1rem]'>
