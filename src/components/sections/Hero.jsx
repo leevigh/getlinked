@@ -3,6 +3,7 @@ import Blast from '../Blast'
 import Chain from '../Chain'
 import Bulb from '../Bulb'
 import Underline from '../Underline'
+import { Link } from 'react-router-dom'
 // import Blast from '../../assets/blast.svg'
 // import {hackathonguy} from '../../assets/hackathon-guy.png'
 
@@ -11,7 +12,7 @@ const Hero = () => {
     <div>
         <header className='flex flex-col text-center border-b-[0.1px] border-opacity-20 border-b-white lg:items-end lg:max-w-[1500px] mx-auto lg:px-8 hero-section'>
             <div className='pt-8 pb-14'>
-                <p className='text-white font-medium text-sm lg:text-[35px]'>Igniting a Revolution in <span className='relative'><span className='absolute -bottom-2 -left-3'><Underline /></span>HR Innovation</span></p>
+                <p className='text-white font-semibold text-sm lg:text-[35px] font-[montserrat]'>Igniting a Revolution in <span className='relative'><span className='absolute -bottom-2 -left-3'><Underline /></span>HR Innovation</span></p>
             </div>
             <div className='flex flex-col lg:flex-row items-center'>
                 <div className='mx-auto '>
@@ -43,19 +44,23 @@ const Hero = () => {
                             <span className='absolute top-12 right-3'><Blast /></span> */}
                             {/* <img className='absolute right-28 bottom-8 border-2 w-16' src='/chain.png' /> */}
                         </h1>
-                        <p className='text-center lg:text-left lg:text-[20px] text-white'>
+                        <p className='lg:max-w-[522px] text-center lg:text-left lg:text-[20px] text-white font-[montserrat]'>
                         Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
                         </p>
                     </div>
-
+                    {/* <div className='px-12 py-4 w-fit rounded-sm text-white font-semibold register-btn'>
+                                Register
+                            </div> */}
                     <div className='py-6 flex justify-center lg:justify-start lg:cursor-pointer'>
-                        <div className='px-12 py-4 w-fit rounded-sm text-white font-semibold register-btn'>
-                            Register
-                        </div>
+                        <Link to={'/register'}>
+                            <div className='px-12 py-4 w-fit rounded-sm text-white font-semibold font-[montserrat] register-btn'>
+                                Register
+                            </div>
+                        </Link>
                     </div>
 
                     <div>
-                        <div className='text-white text-center lg:text-left text-5xl'>
+                        <div className='text-white text-center lg:text-left text-5xl lg:text-6xl font-unica'>
                             00<span className='text-sm'>H</span> 00<span className='text-sm'>M</span> 00<span className='text-sm'>S</span>
                         </div>
                     </div>
