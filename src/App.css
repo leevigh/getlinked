@@ -1,7 +1,50 @@
-#root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align: center;
+body {
+  /* background-image: linear-gradient(#903AFF,#D434FE); */
+  background-color: #150e28;
+  font-family: "ClashDisplay";
 }
 
+.mobile-menu {
+  /* background-color: #fff; */
+  position: absolute;
+  width: 90%;
+}
+
+.register-btn {
+  background-image: linear-gradient(#903aff, #d434fe, #ff26b9, #fe34b9);
+}
+
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto;
+  padding: 0 auto;
+  text-align: center; */
+}
+
+.timeline-dot {
+  background-image: linear-gradient(#903aff, #d434fe);
+}
+
+.timeline-dot::after {
+  content: "";
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 137px;
+  width: 4px;
+  background-color: #d434fe;
+}
+
+@media(max-width: 800px) {
+  .timeline-dot::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 77px;
+    width: 4px;
+    background-color: #d434fe;
+  }
+}

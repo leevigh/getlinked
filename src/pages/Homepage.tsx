@@ -1,22 +1,31 @@
 import React from 'react'
-import { Rules } from '../Components/Sections/Rules'
 import Criteria from '../Components/Sections/Criteria'
 import Prizes from '../components/sections/Prizes'
 import Partners from '../components/sections/Partners'
 import Privacy from '../components/sections/Privacy'
 import Footer from '../components/sections/Footer'
+import Navbar from '../components/Navbar'
+import Hero from '../components/sections/Hero'
+import { Rules } from '../Components/Sections/Rules'
+import BigIdea from '../components/sections/BigIdea'
+import TimelineSection from '../components/sections/TimelineSection'
 
 const Homepage = () => {
   return (
     <>
-      <div>
-        < Rules />
-        <Criteria />
-        < Prizes />
-        <Partners />
-        <Privacy />
-        <Footer />
-      </div>
+        <Navbar />
+        <Hero />
+        <BigIdea />
+        <Rules />
+        <TimelineSection />
+        <div>
+            < Rules />
+            <Criteria />
+            < Prizes />
+            <Partners />
+            <Privacy />
+            <Footer />
+        </div>
     </>
   )
 }
