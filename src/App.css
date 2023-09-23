@@ -14,6 +14,114 @@ body {
   background-image: linear-gradient(#903aff, #d434fe, #ff26b9, #fe34b9);
 }
 
+.submit-btn {
+  background-image: linear-gradient(#903aff, #d434fe, #ff26b9, #fe34b9) !important;
+
+}
+
+/* Navigation styles */
+.border-gradient {
+  position: relative;
+  background-color: #150e28;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -1px;
+  left: -1px; 
+  right: -1px; 
+  bottom: -1px; 
+  background: linear-gradient(to right, #903aff, #d434fe, #ff26b9, #fe34b9);
+  z-index: -1; 
+}
+
+/* Hero styles */
+.home-container {
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: -6rem;
+  left: 2rem;
+  width: 750px;
+  height: 750px;
+  /* background-image: radial-gradient(circle, #903aff 0%, #150E28); */
+  background-image: radial-gradient(circle, #903aff 0%, transparent 60%, transparent 100%);;
+  border-radius: 50%; /* Adjust the border-radius for the desired roundness */
+  opacity: 0.7; /* Adjust the opacity as needed */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.home-container::after {
+  content: '';
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  width: 500px;
+  height: 500px;
+  /* background-image: radial-gradient(circle, #903aff 0%, transparent 60%, transparent 100%); */
+  background-image: radial-gradient(circle, #903aff 0%, rgba(21, 14, 40, 0.6) 70%, rgba(21, 14, 40, 0.4) 60%, transparent 100%);
+  border-radius: 50%; /* Adjust the border-radius for the desired roundness */
+  opacity: 0.7; /* Adjust the opacity as needed */
+  z-index: -1; /* Place the pseudo-element behind the content */
+  overflow-y: hidden;
+}
+
+@media(max-width: 1024px) {
+  .home-container::after {
+    content: '';
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 0;
+    height: 0;
+    /* background-image: radial-gradient(circle, #903aff 0%, transparent 60%, transparent 100%); */
+    background-image: radial-gradient(circle, #903aff 0%, rgba(21, 14, 40, 0.6) 70%, rgba(21, 14, 40, 0.4) 60%, transparent 100%);
+    border-radius: 50%; /* Adjust the border-radius for the desired roundness */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: -1; /* Place the pseudo-element behind the content */
+    overflow-y: hidden;
+  }
+
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: -2rem;
+    width: 300px;
+    height: 300px;
+    /* background-image: radial-gradient(circle, #903aff 0%, #150E28); */
+    background-image: radial-gradient(circle, #903aff 0%, transparent 70%, transparent 100%);;
+    border-radius: 50%; /* Adjust the border-radius for the desired roundness */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: -1; /* Place the pseudo-element behind the content */
+  }
+}
+
+/* mobile */
+.home-container-mobile {
+  position: relative;
+}
+
+.home-container-mobile::before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  width: 300px;
+  height: 300px;
+  /* background-image: radial-gradient(circle, #903aff 0%, #150E28); */
+  background-image: radial-gradient(circle, #903aff 0%, transparent 70%, transparent 100%);;
+  border-radius: 50%; /* Adjust the border-radius for the desired roundness */
+  opacity: 0.7; /* Adjust the opacity as needed */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
 #root {
   /* max-width: 1280px; */
   /* margin: 0 auto;

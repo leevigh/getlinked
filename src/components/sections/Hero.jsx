@@ -9,15 +9,16 @@ import Underline from '../Underline'
 const Hero = () => {
   return (
     <div>
-        <header className='flex flex-col text-center border-b-[0.1px] border-opacity-20 border-b-white lg:items-end lg:max-w-[1500px] mx-auto lg:px-8'>
+        <header className='flex flex-col text-center border-b-[0.1px] border-opacity-20 border-b-white lg:items-end lg:max-w-[1500px] mx-auto lg:px-8 hero-section'>
             <div className='pt-8 pb-14'>
                 <p className='text-white font-medium text-sm lg:text-[35px]'>Igniting a Revolution in <span className='relative'><span className='absolute -bottom-2 -left-3'><Underline /></span>HR Innovation</span></p>
             </div>
             <div className='flex flex-col lg:flex-row items-center'>
                 <div className='mx-auto '>
+                {/* bg-[url("./purple-lens-flare.png")]  */}
+                        {/* bg-no-repeat bg-[2rem]-[2rem] bg-contain bg-opacity-20 */}
                     <div className='
-                        bg-[url("./purple-lens-flare.png")] 
-                        bg-no-repeat bg-[2rem]-[2rem] bg-contain bg-opacity-20'>
+                        '>
                         
                         <h1 className=' text-[28px] lg:text-[80px] font-semibold text-center lg:text-left text-white'>
                             {/* <span className='absolute right-[12%] -top-1 xl:right-1/3'>

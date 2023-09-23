@@ -1,5 +1,5 @@
 import React from 'react'
-import vector from '../../assets/vector.png'
+import vector from '../../assets/Vector.png'
 import man from '../../assets/man.png'
 import list from '../../assets/list.png'
 
