@@ -14,7 +14,7 @@ const BigIdea = () => {
                 </div>
                 
                 <div className='lg:max-w-[535px]'>
-                    <p className='text-white text-center lg:text-left'>
+                    <p className='text-white text-center font-[montserrat] lg:text-left'>
                     Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as 
     day: to shape the future. Whether you're 
     a coding genius, a design maverick, or a 
