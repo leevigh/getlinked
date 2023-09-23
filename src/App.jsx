@@ -4,9 +4,6 @@ import './App.css'
 import { Rules } from './Components/Sections/Rules'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage'
-=======
-import Rules from './Component/Sections/Rules'
->>>>>>> Stashed changes
 
 function App() {
 
@@ -15,6 +12,7 @@ function App() {
 <<<<<<< Updated upstream
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/register' element={<Registerpage />} />
       </Routes>
 =======
       <div>
