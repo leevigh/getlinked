@@ -3,7 +3,7 @@ import read from "../../assets/read.png"
 
 export const Rules = () => {
   return (
-    <div className='bg-custom-bg-color'>
+    <div className='bg-custom-bg-color pb-[4rem] '>
 
 
         <div className=' flex flex-wrap-reverse px-8 border-2 lg:justify-evenly lg:flex-nowrap justify-center items-center  max-w-[1500px] mx-auto'>
