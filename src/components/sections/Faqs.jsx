@@ -24,7 +24,7 @@ function AccordionItem({ title, content }) {
                         <div className="border-b-4 border-[#d434fe]  text-white  ">
                         <div className="flex items-center justify-between py-2 cursor-pointer" onClick={toggleAccordion}>
                         <h2 className="text-[12px] ">{title}</h2>
-                        <div className="text-xl">
+                        <div className="text-[1rem] ">
                             {isOpen ? (
                             <span className="transform rotate-45 text-[#d434f3] ">-</span>
                             ) : (
