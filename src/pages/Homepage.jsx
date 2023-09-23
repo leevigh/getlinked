@@ -22,7 +22,7 @@ const Homepage = () => {
         <div>
             < Rules />
             <Criteria />
-            <Faqs />
+            <Faqs/>
             < Prizes />
             <Partners />
             <Privacy />
