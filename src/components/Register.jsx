@@ -46,8 +46,30 @@ const Register = () => {
         e.preventDefault()
 
         // const response
+        try {
+            setLoading(true)
+            const response = await api.post('/hackathon/registration', data)
+
+            if(response?.status === 200) {
+                setLoading(false)
+
+                setData({
+                    "email":"",
+                    "phone_number":"",
+                    "team_name": "",
+                    "group_size": 0,
+                    "project_topic":"",
+                    "category": 0,
+                    "privacy_poclicy_accepted": false
+                })
+
+                setShowModal(true)
+            }
+        } catch (error) {
+            setLoading(false)
+            alert("There was an error")
+        }
         
-        console.log("data", data)
     }
 
     const checkPrivacy = () => {
@@ -177,9 +199,10 @@ const Register = () => {
                     <div className='flex justify-center lg:w-full'>
                         <div  className='py-[1rem] lg:w-full'>
                             <button 
+                                disabled={loading}
                                 type='submit' 
                                 className='px-12 py-4 w-fit lg:w-full rounded-sm text-white submit-btn'>
-                                    Register Now
+                                    {loading ? 'Loading...':'Register Now'}
                             </button>
                         </div>
                     </div>
