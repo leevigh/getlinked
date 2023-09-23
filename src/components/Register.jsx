@@ -199,9 +199,10 @@ const Register = () => {
                     <div className='flex justify-center lg:w-full'>
                         <div  className='py-[1rem] lg:w-full'>
                             <button 
+                                disabled={loading}
                                 type='submit' 
                                 className='px-12 py-4 w-fit lg:w-full rounded-sm text-white submit-btn'>
-                                    Register Now
+                                    {loading ? 'Loading...':'Register Now'}
                             </button>
                         </div>
                     </div>
