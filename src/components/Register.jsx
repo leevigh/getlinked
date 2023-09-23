@@ -48,7 +48,7 @@ const Register = () => {
         // const response
         try {
             setLoading(true)
-            const response = await api.get('/hackathon/registration')
+            const response = await api.post('/hackathon/registration', data)
 
             if(response?.status === 200) {
                 setLoading(false)

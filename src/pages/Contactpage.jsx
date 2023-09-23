@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { api } from '../main'
 import Navbar from '../components/Navbar'
 
 import { FiChevronLeft } from 'react-icons/fi'
@@ -6,7 +7,13 @@ import { FaXTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/
 
 const Contactpage = () => {
 
-    const [data, setData] = useState({})
+    const [loading, setLoading] = useState(false)
+    const [data, setData] = useState({
+        "email": "",
+        "phone_number": "",
+        "first_name": "",
+        "message": ""
+    })
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -15,6 +22,36 @@ const Contactpage = () => {
             ...prevState,
             [name]: value,
         }))
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        // const response
+        try {
+            setLoading(true)
+            const response = await api.post('/hackathon/contact-form', data)
+
+            if(response?.status === 200) {
+                setLoading(false)
+
+                setData({
+                    "email": "",
+                    "phone_number": "",
+                    "first_name": "",
+                    "message": ""
+                })
+
+                console.log(response)
+
+            }
+        } catch (error) {
+            setLoading(false)
+            alert("There was an error")
+
+            console.log(error)
+        }
+        
     }
 
   return (
@@ -84,33 +121,34 @@ const Contactpage = () => {
                         </div>
 
                         <div className=''>
-                            <form action="" className='flex flex-col'>
+                            <form onSubmit={handleSubmit} className='flex flex-col'>
                                 <div className='flex flex-col lg:gap-8'>
                                     <div className='flex flex-col pb-[18px]'>
                                         
-                                        <input value={data['team_name']} onChange={handleChange} name="team_name" className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder="Team's Name" />
+                                        <input type='email' value={data['email']} onChange={handleChange} name="email" className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder="Email" />
                                     </div>
                                     <div className='flex flex-col pb-[18px]'>
                                         
-                                        <input value={data['phone_number']} onChange={handleChange} name='phone_number' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='Topic' />
-                                    </div>
-
-                                    <div className='flex flex-col pb-[18px]'>
-                                        
-                                        <input value={data['phone_number']} onChange={handleChange} name='phone_number' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='Email' />
+                                        <input type='tel' value={data['phone_number']} onChange={handleChange} name='phone_number' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='Phone Number' />
                                     </div>
 
                                     <div className='flex flex-col pb-[18px]'>
                                         
-                                        <textarea rows={4} value={data['phone_number']} onChange={handleChange} name='phone_number' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='Message' />
+                                        <input value={data['first_name']} onChange={handleChange} name='first_name' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='First Name' />
+                                    </div>
+
+                                    <div className='flex flex-col pb-[18px]'>
+                                        
+                                        <textarea rows={4} value={data['message']} onChange={handleChange} name='message' className='p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white' placeholder='Message' />
                                     </div>
 
                                     <div className='flex justify-center'>
                                         <div  className='py-[1rem] lg:w-full'>
-                                            <button 
+                                            <button
+                                                disabled={loading} 
                                                 type='submit' 
                                                 className='px-12 py-4 w-fit lg:w-full rounded-sm text-white submit-btn'>
-                                                    Submit
+                                                    {loading ? "Loading" : "Submit"}
                                             </button>
                                         </div>
                                     </div>
