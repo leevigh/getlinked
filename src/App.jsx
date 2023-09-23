@@ -13,14 +13,6 @@ function App() {
 
   return (
     <>
-      <div>
-        < Rules />
-        <Criteria />
-        < Prizes />
-        <Partners />
-        <Privacy />
-        <Footer />
-      </div>
      
     </>
   )
