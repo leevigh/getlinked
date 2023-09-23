@@ -26,6 +26,7 @@ const Homepage = () => {
         <div>
             < Rules />
             <Criteria />
+            <Faqs />
             < Prizes />
             <Partners />
             <Privacy />
