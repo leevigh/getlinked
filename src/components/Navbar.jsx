@@ -51,7 +51,7 @@ const Navbar = () => {
                             mobile-menu right-0 top-0 w-full h-screen px-[32px] z-10">
 
                     <div className='flex justify-end py-[1rem]'>
-                        <div onClick={handleMenu}>
+                        <div className='w-[23px] h-[23px] grid place-items-center rounded-full border-gradient' onClick={handleMenu}>
                             <Close />
                         </div>
                     </div>
@@ -61,9 +61,11 @@ const Navbar = () => {
                         <Link to=""><li className='py-[1rem]'>FAQs</li></Link>
                         <Link to=""><li className='py-[1rem]'>Contact</li></Link>
 
+                        <Link to={'/register'}>
                         <div className='py-[1rem]'>
                             <div className='px-12 py-4 w-fit rounded-sm register-btn'>Register</div>
                         </div>
+                        </Link>
                         
                     </ul>
                 </div>
