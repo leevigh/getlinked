@@ -9,6 +9,7 @@ import Hero from '../components/sections/Hero'
 import { Rules } from '../Components/Sections/Rules'
 import BigIdea from '../components/sections/BigIdea'
 import TimelineSection from '../components/sections/TimelineSection'
+import Faqs from '../components/sections/Faqs'
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
         <div>
             < Rules />
             <Criteria />
+            <Faqs/>
             < Prizes />
             <Partners />
             <Privacy />
