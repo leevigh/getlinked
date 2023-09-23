@@ -6,15 +6,16 @@ export const Rules = () => {
     <div className='bg-custom-bg-color'>
 
 
-        <div className=' flex flex-wrap-reverse lg:flex-nowrap justify-center items-center px-5 '>
+        <div className=' flex flex-wrap-reverse px-8 border-2 lg:justify-evenly lg:flex-nowrap justify-center items-center  max-w-[1500px] mx-auto'>
 
-            <div className=' text-center font-sans  px-14 lg:w-1/2 lg:text-left lg:ml-[3rem]  lg:mr-[2rem] lg:pr-[1.5rem]'>
-                <p  className='text-xl font-bold font-ClashDisplay'>
-                    <span className='text-white '>Rules and</span><br/>
-                    <span className='text-purple-700'>Guidelines</span>
+            <div className=' text-center lg:w-1/2 lg:text-left '>
+            {/* lg:ml-[3rem]  lg:mr-[2rem] lg:pr-[1.5rem] */}
+                <p  className='text-xl font-bold lg:max-w-[170px]'>
+                    <span className='text-white '>Rules and</span> 
+                    <span className='text-purple-700'> Guidelines</span>
                 </p>
 
-                <p className='text-white text-[14px] p-4 lg:p-0'>
+                <p className='text-white text-[14px] lg:max-w-[535px] lg:p-0'>
                     Our tech hackathon is a melting pot of visionaries, and its purpose is as
                     clear as day: to shape the future. Whether you're a coding genius, a 
                     design maverick, or a concept wizard, you'll have the chance to transform 

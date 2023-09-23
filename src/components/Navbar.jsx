@@ -34,9 +34,11 @@ const Navbar = () => {
                     <Link to='/'><div className='pr-14'>Contact</div></Link>
                 </div>
 
-                <div className='py-[1rem] pl-16 lg:cursor-pointer'>
-                    <div className='px-12 py-4 w-fit rounded-sm text-white font-semibold register-btn'>Register</div>
-                </div>
+                <Link to={'/register'}>
+                    <div className='py-[1rem] pl-16 lg:cursor-pointer'>
+                        <div className='px-12 py-4 w-fit rounded-sm text-white font-semibold register-btn'>Register</div>
+                    </div>
+                </Link>
             </div>
 
             <div onClick={handleMenu} className='flex lg:hidden'>
