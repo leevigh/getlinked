@@ -14,15 +14,18 @@ import Faqs from '../components/sections/Faqs'
 const Homepage = () => {
   return (
     <>
+      <div className=' lg:max-w-[1500px] lg:mx-auto home-container'>
+        {/* <div className='home-container-mobile lg:hidden'></div> */}
         <Navbar />
         <Hero />
+      </div>
         <BigIdea />
         <Rules />
+        <Criteria />
         <TimelineSection />
         <div>
             < Rules />
             <Criteria />
-            <Faqs/>
             < Prizes />
             <Partners />
             <Privacy />
