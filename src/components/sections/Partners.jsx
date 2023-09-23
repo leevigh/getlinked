@@ -1,5 +1,5 @@
 import React from 'react'
-import partner from '../../assets/partner.png'
+import partner from '../../assets/Partner.png'
 
 const Partners = () => {
   return (
