@@ -126,12 +126,7 @@ body {
   z-index: -1; /* Place the pseudo-element behind the content */
 }
 
-#root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto;
-  padding: 0 auto;
-  text-align: center; */
-}
+
 
 .timeline-dot {
   background-image: linear-gradient(#903aff, #d434fe);
