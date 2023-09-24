@@ -77,7 +77,7 @@ const Privacy = () => {
 
             <div className='py-[2rem] lg:w-[40%] lg:pr-[2rem] px-8'>
 
-                <div className='bg-[url("/lock.png")] bg-no-repeat bg-contain bg-top pt-24'>
+                <div className='bg-[url("/lock.png")] bg-no-repeat bg-contain bg-top pt-[11rem] pr-[2rem] '>
                     <img src="/policy-man.png" alt="Privacy policy" />
                 </div>
                 {/* <div class="relative  bottom-[2rem] pl-[5rem] lg:h-[85%] lg:w-full lg:right-[10%] lg:bottom-[11%]  "> */}

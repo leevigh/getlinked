@@ -28,10 +28,17 @@ const Navbar = () => {
 
             <div className='hidden lg:flex lg:items-center'>
                 <div className='flex text-white font-normal'>
+<<<<<<< HEAD
                     <Link to='#timeline'><div className='pr-14'>Timeline</div></Link>
                     <Link to='#overview'><div className='pr-14'>Overview</div></Link>
                     <Link to='#faqs'><div className='pr-14'>FAQs</div></Link>
                     <Link to='/contact-us'><div className='pr-14'>Contact</div></Link>
+=======
+                    <Link to={'/ Faqs'}><div className='pr-14'>Timeline</div></Link>
+                    <Link to='/'><div className='pr-14'>Overview</div></Link>
+                    <Link to='/'><div className='pr-14'>FAQs</div></Link>
+                    <Link to='/'><div className='pr-14'>Contact</div></Link>
+>>>>>>> james-changes
                 </div>
 
                 <Link to={'/register'}>
