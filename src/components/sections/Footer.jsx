@@ -6,6 +6,7 @@ import X from '../../assets/X.png'
 import linkedin from '../../assets/linkedin.png'
 import vectors from '../../assets/Vectors.png'
 import group from '../../assets/Group.png'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -42,10 +43,10 @@ const Footer = () => {
                 <div className=' mb-[4rem] lg:w-[40%] lg:ml-[8rem] ' > 
 
                     <p className='text-[#D434FE] text-[1.5rem] font-bold p-2 lg:p-0 '> Useful Links</p>
-                    <p className='text-[1rem] font-bold p-2'> Overview</p>
-                    <p className='text-[1rem] font-bold p-2'> Timeline</p>
-                    <p className='text-[1rem] font-bold p-2'>FAQs</p>
-                    <p className='text-[1rem] font-bold p-2'> Register</p>
+                    <Link to='/overview'><p className='text-[1rem] font-bold p-2'> Overview</p></Link>
+                    <Link to='/timeline'><p className='text-[1rem] font-bold p-2'> Timeline</p></Link>
+                    <Link to={'/Faqs'}><p className='text-[1rem] font-bold p-2'>FAQs</p></Link>
+                    <Link to={'/register'}><p className='text-[1rem] font-bold p-2'> Register</p></Link>
                     <p className='flex items-center p-2 '> 
                         <span className='text-[1rem] text-[#d434fe] font-bold pr-4 '>Follow us</span> 
                         <img src={instagram} alt="IMG" className='h-6 pr-4' />
