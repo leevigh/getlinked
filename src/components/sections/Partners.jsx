@@ -3,7 +3,7 @@ import partner from '../../assets/Partner.png'
 
 const Partners = () => {
   return (
-    <div className='bg-custom-bg-color pb-[6rem] border border-purple-400 border-l-0 border-r-0 border-t-0  border-b-1'>
+    <div className=' pb-[6rem] border border-purple-400 border-l-0 border-r-0 border-t-0  border-b-1 px-[2rem] lg:px-[4rem] '>
 
         <div className='max-w-[1500px] mx-auto'>
           <div className='flex flex-col lg:py-8 lg:items-center text-center text-white mb-[32px]'>
