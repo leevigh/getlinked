@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import Menu from './Menu'
 import Close from './Close'
-import Faqs from './sections/Faqs'
 import '../App.css'
 
 const Navbar = () => {
