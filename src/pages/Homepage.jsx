@@ -18,10 +18,10 @@ const Homepage = () => {
         <Hero />
         <BigIdea />
         <Rules />
+        <Criteria />
         <TimelineSection />
         <div>
-            < Rules />
-            <Criteria />
+            
             <Faqs />
             < Prizes />
             <Partners />
