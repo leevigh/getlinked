@@ -24,8 +24,6 @@ const Homepage = () => {
         <Criteria />
         <TimelineSection />
         <div>
-            < Rules />
-            <Criteria />
             <Faqs />
             < Prizes />
             <Partners />
