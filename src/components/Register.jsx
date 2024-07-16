@@ -25,7 +25,7 @@ const Register = () => {
       setLoading(true);
 
       const response = await api.get("/hackathon/categories-list");
-      console.log(response, "this is the category");
+      console.log(response.data, "this is the category");
       if (response.status === 200) {
         setLoading(false);
         setCategories(response.data);

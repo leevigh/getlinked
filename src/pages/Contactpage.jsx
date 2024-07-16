@@ -136,7 +136,7 @@ const Contactpage = () => {
                     <div className="flex flex-col pb-[18px]">
                       <input
                         type="email"
-                        value={data["email"]}
+                        value={data.email}
                         onChange={handleChange}
                         name="email"
                         className="p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white"
@@ -146,7 +146,7 @@ const Contactpage = () => {
                     <div className="flex flex-col pb-[18px]">
                       <input
                         type="tel"
-                        value={data["phone_number"]}
+                        value={data.phone_number}
                         onChange={handleChange}
                         name="phone_number"
                         className="p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white"
@@ -156,7 +156,7 @@ const Contactpage = () => {
 
                     <div className="flex flex-col pb-[18px]">
                       <input
-                        value={data["first_name"]}
+                        value={data.first_name}
                         onChange={handleChange}
                         name="first_name"
                         className="p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white"
@@ -167,7 +167,7 @@ const Contactpage = () => {
                     <div className="flex flex-col pb-[18px]">
                       <textarea
                         rows={4}
-                        value={data["message"]}
+                        value={data.message}
                         onChange={handleChange}
                         name="message"
                         className="p-2 text-white rounded-[4px] bg-[#140D27] border-[1px] border-white"
@@ -179,6 +179,7 @@ const Contactpage = () => {
                       <div className="py-[1rem] lg:w-full">
                         <button
                           disabled={loading}
+                          onClick={handleSubmit}
                           type="submit"
                           className="px-12 py-4 w-fit lg:w-full rounded-sm text-white submit-btn">
                           {loading ? "Loading" : "Submit"}
